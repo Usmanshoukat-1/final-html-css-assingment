@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final Assignment</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    </head>
+    <body>
+        <section id="header">
+            <div class="container">
+                <img src="images/logo.png" class="logo">
+                <div class="header-text">
+                <h1>Welcome To <br>Cloud 87 World's Changing Platform</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
+              <button class="common-btn">Post a Order Request</button>
+              
+                </div>
+            </div>
+        </section>
+
+
+        <nav id="sideNav">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#Graphic Design">Graphic Design</a></li>
+                <li><a href="#Contact Us">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+            </ul>
+
+        </nav>
+        <img src="images/menu.png" id="menuBtn">
+
+
+
+
+
+
+
+        <!--------------------------------Graphic Design------------------------------>-->
+        <section id="Graphic">
+            <div class="Graphic-left-col">
+                <img src="images/graphic.png">
+                </div>
+                <div class="Graphic-right-col">
+                <div class="Graphic-text">
+                    <h1>Graphic Design</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  
+                    </p> <br> <br>
+                      
+                    <h2>High Qulity And Eye Catchy Designs</h2>
+                        <h3>usman shoukat</h3>
+                 </div>
+
+                </div>
+        </section>
+<hr>
+
+<!--------------Our Team-------------------->
+<section id="team">
+<div class="container team-row">
+    <div class="team-left-col">
+        <div class="team-text">
+            <h1>Meet our top<br>Members</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia possimus </p>
+            <button class="common-btn">Meet Our Team</button>
+        </div>
+    </div>
+    <div class="team-right-col">
+        <img src="images/our team.png">
+    </div>
+</div>
+</section>
+<hr>
+
+
+
+
+
+<!--------------contact--------------------->
+<section id="contact">
+<div class="container contact-row">
+    <div class="contact-left-col">
+        <h1 class="text">Sign up to join<br>our community</h1>
+        <form>
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter email">
+            <input type="password" placeholder="Enter password">
+            <div class="btn-box">
+                <button class="common-btn">Call</button>
+                <button class="common-btn">Text</button>
+            </div>
+        </form>
+    </div>
+    <div class="contact-right-col">
+        <img src="images/contactus.png">
+    </div>
+</div>
+</section>
+
+
+
+
+
+<!--------------footer-------------------->
+<section id="footer">
+<div class="container footer-row">
+    <hr>
+    <div class="footer-left-col">
+        <div class="footer-links">
+            <div class="link-title">
+                <h4>Graphic Design</h4>
+                <small>Logo</small><br>
+                <small>Branding</small>
+            </div>
+
+            <div class="link-title">
+                <h4>Web Devlopment</h4>
+                <small>Web Templates</small><br>
+                <small>Landing Page</small>
+            </div>
+
+
+            <div class="link-title">
+                <h4>App Development</h4>
+                <small>Calculator App</small><br>
+                <small>Time Tracking App</small>
+            </div>
+
+            <div class="link-title">
+                <h4>Branding</h4>
+                <small>Packging</small><br>
+                <small>Advertising</small>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="footer-right-col">
+        <div class="footer-info">
+            <div class="copyright-text">
+                <samll>Support@ hscreations51@gmail.com</samll><br>
+                <samll>copyright 2020 03485942486</samll>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo2.png">
+                <button class="common-btn">Check Our Work</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+        <script>
+             var menuBtn = document.getElementById("menuBtn");
+             var sideNav = document.getElementById("sideNav");
+
+             sideNav.style.right ="-250px";
+             menuBtn.onclick = function(){
+                 if (sideNav.style.right =="-250px") {
+                    sideNav.style.right ="0";
+                 }
+                 else{
+                    sideNav.style.right ="-250px";
+                 }
+             }
+             var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+        </script>
+
+    </body>
+</html>
